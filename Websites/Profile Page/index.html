@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@300&display=swap"
+    rel="stylesheet">
+  <title>My Profile</title>
+</head>
+
+<body>
+  <nav role="navigation">
+    <span>Simon R. Murcia</span>
+    <ul id="nav-sections" role="menubar">
+      <li role="menuitem"><a href="#home">Home</a></li>
+      <li role="menuitem"><a href="#hobbies">Hobbies</a></li>
+      <li role="menuitem"><a href="#projects">Projects</a></li>
+      <li role="menuitem"><a href="#goals">Goals</a></li>
+    </ul>
+    <button id="nav-dropdown" aria-label="Navigation Menu" aria-expanded="false">≡</button>
+  </nav>
+  <main>
+    <section id="home">
+      <div id="home-wrapper">
+        <h1>
+          Hello, I'm Simon
+        </h1>
+        <p>
+          I'm a CS student ready to embark on my Web Development journey.
+          I'm resourceful, I learn pretty quickly, and I like having lots of tools at my disposal.
+          I'll do my best to become a great web developer, quickly!
+        </p>
+      </div>
+      <img class="profile-picture" alt="profile_picture" src="https://i.ibb.co/TYz7XgP/profile.jpg">
+    </section>
+    <div id="sections-wrapper">
+      <section class="profile-list" id="hobbies" role="region" aria-labelledby="hobbies-heading">
+        <h2 id="hobbies-heading">
+          Hobbies
+        </h2>
+        <ul>
+          <li role="listitem"><span class="hobby-emoji">👾</span><span class="hobby-name">Game Development</span></li>
+          <li role="listitem"><span class="hobby-emoji">💻</span><span class="hobby-name">Programming</span></li>
+          <li role="listitem"><span class="hobby-emoji">📸</span><span class="hobby-name">Photography</span></li>
+          <li role="listitem"><span class="hobby-emoji">🦢</span><span class="hobby-name">Origami</span></li>
+          <li role="listitem"><span class="hobby-emoji">🧵</span><span class="hobby-name">Crochet</span></li>
+          <li role="listitem"><span class="hobby-emoji">⚡</span><span class="hobby-name">Learning and making cool
+              stuff</span></li>
+        </ul>
+      </section>
+      <section class="profile-list" id="goals" role="region" aria-labelledby="goals-heading">
+        <h2 id="goals-heading">
+          Goals
+        </h2>
+        <ul>
+          <li role="listitem">Getting a job as a Web Developer</li>
+          <li role="listitem">Completing a Web Development Bootcamp</li>
+          <li role="listitem">Learning a new (programming?) language</li>
+          <li role="listitem">Improving soft skills</li>
+        </ul>
+      </section>
+      <section class="profile-list" id="projects" role="region" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">
+          Projects
+        </h2>
+        <ul>
+          <li role="listitem">A <a target="_blank" rel="noopener noreferrer"
+              href="https://simonrmurcia.wordpress.com/">Web Dev portfolio</a> I made.</li>
+          <li role="listitem">
+            <a target="_blank" rel="noopener noreferrer" href="https://simongamedev.itch.io/snake-clone">A game I
+              made</a>. I made the graphics, sfx, music, and programming!
+          </li>
+          <li role="listitem">
+            Feel free to check out some of my
+            <a target="_blank" rel="noopener noreferrer"
+              href="https://www.flickr.com/people/190773826@N04/">photography</a>!
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  <footer role="contentinfo">
+    <span class="footer-info">Here are some of my social links, by the way</span>
+    <div class="social-icons">
+      <a href="https://www.flickr.com/people/190773826@N04/" role="link" aria-label="Flickr"><img class="social-icon"
+          src="https://svgshare.com/i/11Ya.svg" alt="flickr" /></a>
+      <a href="https://www.linkedin.com/in/simon-r-murcia/" role="link" aria-label="LinkedIn"><img class="social-icon"
+          src="https://svgshare.com/i/11TJ.svg" alt="linkedin" /></a>
+      <a href="https://github.com/simon2375" role="link" aria-label="GitHub"><img class="social-icon" alt="github"
+          src="https://svgshare.com/i/11S2.svg" /></a>
+      <a href="https://codepen.io/simonrm0" role="link" aria-label="CodePen"><img class="social-icon" alt="codepen"
+          src="https://svgshare.com/i/11d_.svg" /></a>
+      <a href="https://www.instagram.com/_simonrm_/" role="link" aria-label="Instagram"><img class="social-icon"
+          alt="instagram" src="https://svgshare.com/i/11S3.svg" /></a>
+    </div>
+  </footer>
+</body>
+
+</html>

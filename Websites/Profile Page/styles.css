@@ -1,0 +1,223 @@
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*border: 1px solid black;*/
+}
+
+:root {
+    --primary-color: #00ADB5;
+    --secondary-color: #EEEEEE;
+    --background-primary: #222831;
+    --background-secondary: #393E46;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.profile-list,
+#home {
+    scroll-margin-top: 13vh;
+}
+
+body {
+    background-color: var(--background-primary);
+    color: var(--secondary-color);
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+
+nav {
+    background-color: var(--background-primary);
+    box-shadow: 0px 0px 20px #ffffff55;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-items: center;
+    height: 10vh;
+}
+
+#nav-sections {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    list-style-type: none;
+}
+
+@media screen and (max-width: 768px) {
+    #nav-sections {
+        display: none;
+    }
+}
+
+#nav-sections li a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--secondary-color);
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+#nav-sections li a:hover {
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
+}
+
+#nav-dropdown {
+    border: none;
+    background-color: transparent;
+    color: var(--secondary-color);
+    font-size: 2rem;
+    transform: scaleX(1.5);
+    transition: all 0.3s ease;
+}
+
+#nav-sections li a:hover,
+#nav-dropdown:hover {
+    color: var(--primary-color);
+}
+
+/* Home Section */
+
+#home {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+#home-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+#home h1 {
+    font-size: 5vw;
+    letter-spacing: 1vw;
+    color: var(--primary-color);
+    text-shadow: 0px 0px 10px #00ADB5;
+}
+
+.profile-picture {
+    width: 30%;
+    box-shadow: 0 0 10px 2px white;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+#home p {
+    text-align: justify;
+    font-size: 1rem;
+    margin-top: 2rem;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: var(--secondary-color);
+    padding: 0 0 20px 20px;
+    border-left: 2px solid var(--background-secondary);
+    border-bottom: 2px solid var(--background-secondary);
+    border-bottom-left-radius: 10px;
+}
+
+/* Profile Lists Styles */
+
+#sections-wrapper {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.profile-list {
+    width: max(30%, 300px);
+    border: 2px solid var(--background-secondary);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.profile-list:hover {
+    box-shadow: 0 0 10px 2px white;
+}
+
+.profile-list h2 {
+    text-align: center;
+    letter-spacing: 3px;
+    color: var(--primary-color);
+    text-shadow: 0px 0px 10px #00ADB5;
+    margin-bottom: 20px;
+}
+
+.profile-list ul li {
+    list-style-type: none;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+/*Hobbies Styles*/
+
+.hobby-emoji {
+    font-size: 2rem;
+    margin-right: 15px;
+}
+
+/* Projects Styles */
+
+#projects a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+#projects a:hover {
+    font-size: 1.3rem;
+    text-shadow: 0px 0px 10px #00ADB5;
+    transition: all 0.3s ease;
+}
+
+#projects li {
+    margin-bottom: 30px;
+}
+
+/* Footer Styles */
+
+footer {
+    box-shadow: 0px 0px 20px #ffffff55;
+    min-height: 10vh;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    color: #aaaaaa;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 20%;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    border-radius: 50%;
+    /*used https://codepen.io/sosuke/pen/Pjoqqp */
+    filter: invert(99%) sepia(73%) saturate(290%) hue-rotate(171deg) brightness(50%) contrast(87%);
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}

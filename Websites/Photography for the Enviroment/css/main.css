@@ -1,0 +1,171 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+main > section:not(:last-child){
+    margin-bottom: 8rem;
+}
+
+#about, #sign-up, #gallery{
+    scroll-margin-top: 11vh;
+}
+
+.--bg-color-1 {
+    background-color: #ECE3CE !important;
+}
+
+.--bg-color-2 {
+    background-color: #86A789 !important;
+}
+
+.--bg-color-3 {
+    background-color: #86A789 !important;
+}
+.--text-color-1 {
+    color: #86A789 !important;
+}
+
+.--big-text {
+    font-size: 4rem;
+}
+
+.--medium-text {
+    font-size: 1rem;
+}
+
+.--text-justify{
+    text-align: justify;
+}
+
+.--fancy-font {
+    font-family: "Lucida Calligraphy", fantasy, Harrington, "Book Antiqua", Palatino, Roboto, serif;
+}
+
+/*Header styles*/
+header {
+    margin: 0 !important;
+    padding: 0;
+    background-color: #D2E3C8;
+    height: 10vh;
+}
+
+
+nav > ul{
+    list-style-type: none;
+    font-size: 1.4rem;
+}
+
+nav > ul > li {
+    background-color: #B2C8BA;
+}
+
+nav > ul li:hover{
+    background-color:#86A789;
+}
+
+nav > ul > li > a:hover{
+    color: floralwhite !important;
+    transition: 0s;
+}
+
+.logo{
+    height: 10vh;
+    width: auto;
+}
+
+/*Slideshow styles*/
+#slideshow{
+    background-color: hsl(0, 0%, 25%); !important;
+}
+#slideshow img{
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    filter: grayscale(40%)
+            opacity(0.5)
+            brightness(60%);
+}
+
+#slideshow .main-text{
+    z-index: 99;
+    transform: translate(-50%, -50%);
+    color: floralwhite;
+    font-size: 5vw;
+    font-family: "Lucida Calligraphy", fantasy, Harrington, "Book Antiqua", Palatino, Roboto, serif;
+}
+
+#slideshow .main-text > span{
+  left: 63%;
+}
+
+.carousel-item{
+    transition: transform 10s linear !important; /* Adjust the transition properties as needed */
+}
+
+/*About styles*/
+
+.about-block, #sign-up form, .gallery-block{
+    background-color: hsl(42, 30%, 82%) !important;
+    border-bottom: 5px solid hsl(42, 20%, 78%);
+}
+
+/*Gallery styles*/
+
+#fullscreen-image-modal{
+    z-index: 9999;
+    position: fixed;
+}
+
+.gallery-block{
+    width: 75%;
+}
+
+@media (max-width: 600px) {
+    .gallery-block{
+        width: 100%;
+    }
+}
+
+.gallery-block img{
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+#gallery {
+    animation-fill-mode: none; /*fixes bug related to animate.css absolute position offsetting*/
+}
+
+.gallery-block img:hover{
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+
+/*footer styles*/
+
+footer {
+    background-color: #B2C8BA !important;
+}
+
+.social-media-icon{
+    width: 30px;
+    height: 30px;
+}
+.social-media-icon:hover{
+    transition: 0.3s ease-in;
+    width: 40px;
+    height: 40px;
+}
+
+

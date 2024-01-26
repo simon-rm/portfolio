@@ -1,0 +1,283 @@
+<!--TODO:
+1. (opt.) make the signup form functional
+2. clean up code (sass colors?)
+3. maybe aria?
+4. chat-bot?
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography For The Enviroment</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"
+        integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body class="--bg-color-1">
+
+    <header class="sticky-top container-fluid row p-0 px-2">
+        <nav class="navbar navbar-expand p-0 m-0">
+            <a class="logo-link" href="#">
+                <picture>
+                    <source class="navbar-brand m-0 p-0 logo animate__animated animate__fadeInDown"
+                        media="(max-width: 500px)" srcset="img/minimalist_logo.svg">
+                    <img loading="lazy" class="navbar-brand m-0 p-0 logo animate__animated animate__fadeInDown"
+                        src="img/logo.svg" alt="logo">
+                </picture>
+            </a>
+            <ul
+                class="navbar-nav d-flex gap-3 gap-md-5 w-100 m-0 p-0 --medium-text justify-content-center justify-content-md-end me-md-5">
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sign-up" class="nav-link text-nowrap">Join Us</a>
+                </li>
+                <li class="nav-item p-0">
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="slideshow" class="mb-3">
+            <div class="carousel slide w-75 mx-auto" data-bs-ride="carousel">
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <h1 class="main-text text-nowrap position-absolute start-50 top-50">Picture a Better Planet. <br>
+                        <span class="position-absolute text-decoration-underline">With Us.</span>
+                    </h1>
+                    <div data-bs-interval="1" class="carousel-item active">
+                        <img loading="lazy" src="img/photos/01.jpg" alt="" class="d-block" style="width:100%">
+                    </div>
+                    <div data-bs-interval="1" class="carousel-item">
+                        <img loading="lazy" src="img/photos/23.jpg" alt="" class="d-block" style="width:100%">
+                    </div>
+                    <div data-bs-interval="1" class="carousel-item">
+                        <img loading="lazy" src="img/photos/20.jpg" alt="" class="d-block" style="width:100%">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="container mb-5">
+            <div id="who-we-are" class="about-block row mb-4">
+                <h2 class="col-md-6 text-center my-auto --fancy-font --big-text --text-color-1">
+                    Who We Are
+                </h2>
+                <p class="col-md-6 --text-justify">
+                    Photography for the Environment is a passionate collective of individuals bound by a shared love for
+                    both the art of photography and the well-being of our planet.
+                    Founded by a group of environmental enthusiasts and skilled photographers, our organization is
+                    driven by the belief that visuals have the power to transcend words and evoke deep emotions.
+                    <span class="d-none d-sm-inline">
+                        We are a diverse team united by a common purpose: to capture the beauty of nature, expose its
+                        vulnerabilities, and ignite positive change through the lens.
+                        Our photographers, hailing from various backgrounds and cultures, bring a rich tapestry of
+                        perspectives, ensuring that our visual storytelling resonates with a global audience.
+                    </span>
+                </p>
+            </div>
+            <div id="what-we-do" class="about-block row mb-4">
+                <h2 class="col-md-6 text-center my-auto --fancy-font --big-text --text-color-1">
+                    What We Do
+                </h2>
+                <p class="col-md-6 --text-justify">
+                    At Photography for the Environment, we harness the power of compelling imagery to communicate
+                    environmental issues and inspire action.
+                    Through a blend of documentary-style photography, immersive storytelling, and impactful campaigns,
+                    we strive to shed light on the delicate balance between humanity and nature.
+                    <span class="d-none d-sm-inline">
+                        Our work extends beyond capturing aesthetically pleasing landscapes; it involves revealing the
+                        stark realities of environmental challenges, advocating for conservation, and showcasing the
+                        resilience of ecosystems.
+                        From organizing awareness exhibitions to collaborating with like-minded organizations, we
+                        leverage our visual narratives to spark conversations, provoke thought, and mobilize communities
+                        toward sustainable practices.
+                    </span>
+                </p>
+            </div>
+            <div id="our-mission" class="about-block row waypoint">
+                <h2 class="col-md-6 text-center my-auto --fancy-font --big-text --text-color-1">Our Mission</h2>
+                <p class="col-md-6 --text-justify">
+                    Our mission is to use the universal language of photography to raise awareness about environmental
+                    issues and foster a collective responsibility for the planet.
+                    We aim to create a global community that recognizes the interconnectedness of all living beings and
+                    actively engages in preserving the beauty and diversity of our natural world.
+                    <span class="d-none d-sm-inline">
+                        Through our projects and initiatives, we seek to empower individuals to make informed choices
+                        that contribute to a sustainable future.
+                        Photography for the Environment envisions a world where every image tells a story of
+                        conservation, where the lens becomes a catalyst for positive change, and where our collective
+                        efforts contribute to a harmonious coexistence between humanity and the environment.
+                        Together, let's capture the essence of our planet and ensure a thriving legacy for generations
+                        to come.
+                    </span>
+                </p>
+            </div>
+        </section>
+        <section id="sign-up" class="container">
+            <h2 class="--fancy-font --big-text text-center">Let's Save The Planet.
+                <span class="d-block --text-color-1">
+                    <strong>
+                        <u>Together.</u>
+                    </strong>
+                </span>
+            </h2>
+            <form class="container p-3">
+                <div class="row">
+                    <div class="field col-12 col-md-9 mx-auto mb-4">
+                        <label class="w-100" for="email">Email</label>
+                        <input class="w-100" type="text" id="email" name="email" placeholder="Your email..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="field mb-4 col-12 col-md-9 mx-auto">
+                        <label for="password">Password</label>
+                        <input class="w-100" type="password" id="password" name="password"
+                            placeholder="Your password..">
+                    </div>
+                </div>
+                <input class="d-block mx-auto" type="submit" value="Sign Up Now">
+            </form>
+        </section>
+        <section id="gallery" class="container-fluid p-0">
+            <h2 class="--fancy-font display-6 text-center my-3">Discover our Incredible Gallery</h2>
+
+            <div class="modal modal-lg" id="fullscreen-image-modal">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Modal body -->
+                        <div class="modal-body modal-centered">
+                            <img loading="lazy" id="fullscreen-image" src="" alt="" class="w-100">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-block mx-auto p-2">
+                <div class="row m-0">
+                    <img loading="lazy" onclick="showImg.call(this)" src="img/photos/01.jpg" alt=""
+                        class="btn col-3 p-0" data-bs-toggle="modal" data-bs-target="#fullscreen-image-modal">
+                    <img loading="lazy" onclick="showImg.call(this)" src="img/photos/02.jpg" alt=""
+                        class="btn col-3 p-0" data-bs-toggle="modal" data-bs-target="#fullscreen-image-modal">
+                    <img loading="lazy" onclick="showImg.call(this)" src="img/photos/03.jpg" alt=""
+                        class="btn col-3 p-0" data-bs-toggle="modal" data-bs-target="#fullscreen-image-modal">
+                    <img loading="lazy" onclick="showImg.call(this)" src="img/photos/04.jpg" alt=""
+                        class="btn col-3 p-0" data-bs-toggle="modal" data-bs-target="#fullscreen-image-modal">
+                </div>
+                <div class="row m-0">
+                    <img loading="lazy" onclick="showImg.call(this)" src="img/photos/05.jpg" alt=""
+                        class="btn col-3 p-0" data-bs-toggle="modal" data-bs-target="#fullscreen-image-modal">
+                    <img loading="lazy" onclick="showImg.call(this)" src="img/photos/06.jpg" alt=""
+                        class="btn col-3 p-0" data-bs-toggle="modal" data-bs-target="#fullscreen-image-modal">
+                    <img loading="lazy" onclick="showImg.call(this)" src="img/photos/07.jpg" alt=""
+                        class="btn col-3 p-0" data-bs-toggle="modal" data-bs-target="#fullscreen-image-modal">
+                    <img loading="lazy" onclick="showImg.call(this)" src="img/photos/08.jpg" alt=""
+                        class="btn col-3 p-0" data-bs-toggle="modal" data-bs-target="#fullscreen-image-modal">
+                </div>
+                <div class="row m-0">
+                    <img loading="lazy" onclick="showImg.call(this)" src="img/photos/09.jpg" alt=""
+                        class="btn col-3 p-0" data-bs-toggle="modal" data-bs-target="#fullscreen-image-modal">
+                    <img loading="lazy" onclick="showImg.call(this)" src="img/photos/10.jpg" alt=""
+                        class="btn col-3 p-0" data-bs-toggle="modal" data-bs-target="#fullscreen-image-modal">
+                    <img loading="lazy" onclick="showImg.call(this)" src="img/photos/11.jpg" alt=""
+                        class="btn col-3 p-0" data-bs-toggle="modal" data-bs-target="#fullscreen-image-modal">
+                    <img loading="lazy" onclick="showImg.call(this)" src="img/photos/12.jpg" alt=""
+                        class="btn col-3 p-0" data-bs-toggle="modal" data-bs-target="#fullscreen-image-modal">
+                </div>
+                <div class="row m-0">
+                    <img loading="lazy" onclick="showImg.call(this)" src="img/photos/13.jpg" alt=""
+                        class="btn col-3 p-0" data-bs-toggle="modal" data-bs-target="#fullscreen-image-modal">
+                    <img loading="lazy" onclick="showImg.call(this)" src="img/photos/14.jpg" alt=""
+                        class="btn col-3 p-0" data-bs-toggle="modal" data-bs-target="#fullscreen-image-modal">
+                    <img loading="lazy" onclick="showImg.call(this)" src="img/photos/15.jpg" alt=""
+                        class="btn col-3 p-0" data-bs-toggle="modal" data-bs-target="#fullscreen-image-modal">
+                    <img loading="lazy" onclick="showImg.call(this)" src="img/photos/16.jpg" alt=""
+                        class="btn col-3 p-0" data-bs-toggle="modal" data-bs-target="#fullscreen-image-modal">
+                </div>
+                <div class="row m-0">
+                    <img loading="lazy" onclick="showImg.call(this)" src="img/photos/17.jpg" alt=""
+                        class="btn col-3 p-0" data-bs-toggle="modal" data-bs-target="#fullscreen-image-modal">
+                    <img loading="lazy" onclick="showImg.call(this)" src="img/photos/18.jpg" alt=""
+                        class="btn col-3 p-0" data-bs-toggle="modal" data-bs-target="#fullscreen-image-modal">
+                    <img loading="lazy" onclick="showImg.call(this)" src="img/photos/19.jpg" alt=""
+                        class="btn col-3 p-0" data-bs-toggle="modal" data-bs-target="#fullscreen-image-modal">
+                    <img loading="lazy" onclick="showImg.call(this)" src="img/photos/20.jpg" alt=""
+                        class="btn col-3 p-0" data-bs-toggle="modal" data-bs-target="#fullscreen-image-modal">
+                </div>
+                <div class="row m-0">
+                    <img loading="lazy" onclick="showImg.call(this)" src="img/photos/21.jpg" alt=""
+                        class="btn col-3 p-0" data-bs-toggle="modal" data-bs-target="#fullscreen-image-modal">
+                    <img loading="lazy" onclick="showImg.call(this)" src="img/photos/22.jpg" alt=""
+                        class="btn col-3 p-0" data-bs-toggle="modal" data-bs-target="#fullscreen-image-modal">
+                    <img loading="lazy" onclick="showImg.call(this)" src="img/photos/23.jpg" alt=""
+                        class="btn col-3 p-0" data-bs-toggle="modal" data-bs-target="#fullscreen-image-modal">
+                    <img loading="lazy" onclick="showImg.call(this)" src="img/photos/24.jpg" alt=""
+                        class="btn col-3 p-0" data-bs-toggle="modal" data-bs-target="#fullscreen-image-modal">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="pb-2 mt-4">
+        <address class="text-center">
+            Photography for the Enviroment & Co. 2023<br>
+            1234 Main Street, Anytown, USA<br>
+            tel: 2314-4329-794
+        </address>
+
+        <div
+            class="social-media gap-2 my-0 mx-auto w-75 h-100 d-flex justify-content-md-between justify-content-around">
+
+            <div class="social-media-icon animate__animated animate__pulse">
+                <a href="https://www.facebook.com/"><img loading="lazy" src="img/social/facebook.svg"
+                        alt="facebook"></a>
+            </div>
+            <div class="social-media-icon animate__animated animate__pulse">
+                <a href="https://www.instagram.com/"><img loading="lazy" src="img/social/instagram.svg"
+                        alt="instagram"></a>
+            </div>
+            <div class="social-media-icon animate__animated animate__pulse">
+                <a href="https://www.twitter.com/"><img loading="lazy" src="img/social/twitter.svg" alt="twitter"></a>
+            </div>
+            <div class="social-media-icon animate__animated animate__pulse">
+                <a href="https://www.youtube.com/"><img loading="lazy" src="img/social/youtube.svg" alt="youtube"></a>
+            </div>
+            <div class="social-media-icon animate__animated animate__pulse">
+                <a href="https://www.linkedin.com/"><img loading="lazy" src="img/social/linkedin.svg"
+                        alt="linkedin"></a>
+            </div>
+            <div class="social-media-icon animate__animated animate__pulse">
+                <a href="https://www.pinterest.com/"><img loading="lazy" src="img/social/pinterest.svg"
+                        alt="pinterest"></a>
+            </div>
+            <div class="social-media-icon animate__animated animate__pulse">
+                <a href="https://www.tumblr.com/"><img loading="lazy" src="img/social/tumblr.svg" alt="tumblr"></a>
+            </div>
+            <div class="social-media-icon animate__animated animate__pulse">
+                <a href="https://www.snapchat.com/"><img loading="lazy" src="img/social/snapchat.svg"
+                        alt="Snapchat"></a>
+            </div>
+            <div class="social-media-icon animate__animated animate__pulse">
+                <a href="https://www.reddit.com/"><img loading="lazy" src="img/social/reddit.svg" alt="reddit"></a>
+            </div>
+            <div class="social-media-icon animate__animated animate__pulse">
+                <a href="https://www.whatsapp.com/"><img loading="lazy" src="img/social/whatsapp.svg"
+                        alt="whatsapp"></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
